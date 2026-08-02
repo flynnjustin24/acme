@@ -1,0 +1,33 @@
+# ACME Configuration (.env format)
+# Copy this file to ~/.acmerc or $ACME_CONFIG and update values
+
+# Build Configuration
+BUILD_RFC_TOOL=xml2rfc
+BUILD_OUTPUT_FORMAT=html
+BUILD_MARKDOWN_PROCESSOR=kramdown-rfc2629
+BUILD_MARKDOWN_ENABLED=true
+
+# Documentation Settings
+DOC_EDITORS_COPY_URL=https://ietf-wg-acme.github.io/acme/
+DOC_BUILD_HISTORY_URL=https://circleci.com/gh/ietf-wg-acme/acme
+DOC_WORKING_GROUP_DRAFT=https://tools.ietf.org/html/draft-ietf-acme-acme
+DOC_DATATRACKER_URL=https://datatracker.ietf.org/wg/acme/documents/
+
+# CI/CD Settings
+CI_CIRCLECI_ENABLED=true
+CI_CIRCLECI_PROJECT=acme
+CI_TRAVIS_ENABLED=false
+
+# Output Directories
+DIR_LIB=lib
+DIR_RFCED=rfced
+DIR_OUTPUT=output
+
+# Logging
+LOG_LEVEL=INFO
+LOG_FILE=acme.log
+
+# IETF Settings
+IETF_WORKING_GROUP=acme
+IETF_MAILING_LIST=acme@ietf.org
+IETF_DRAFT_NAME=draft-ietf-acme-acme
