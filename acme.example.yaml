@@ -1,0 +1,52 @@
+# ACME Protocol Configuration Example
+# Copy this file to one of the default locations and update values
+
+# Build Configuration
+build:
+  # RFC processing tool settings
+  rfc_tool: xml2rfc          # Tool for converting markdown/xml to RFC format
+  output_format: html        # Output format: html, text, or xml
+  
+  # Markdown processor settings (if using kramdown-rfc2629)
+  markdown_processor: kramdown-rfc2629
+  markdown_enabled: true
+
+# Documentation Settings
+documentation:
+  # Editor's copy
+  editors_copy_url: https://ietf-wg-acme.github.io/acme/
+  
+  # Build history
+  build_history_url: https://circleci.com/gh/ietf-wg-acme/acme
+  
+  # Working Group Draft
+  working_group_draft: https://tools.ietf.org/html/draft-ietf-acme-acme
+  
+  # IETF datatracker
+  datatracker_url: https://datatracker.ietf.org/wg/acme/documents/
+
+# CI/CD Settings
+ci:
+  # CircleCI configuration
+  circleci_enabled: true
+  circleci_project: acme
+  
+  # Travis CI configuration (legacy)
+  travis_enabled: false
+
+# Output Directories
+directories:
+  lib: lib                   # Third-party libraries
+  rfced: rfced               # RFC processing artifacts
+  output: output             # Build output
+
+# Logging
+logging:
+  level: INFO                # DEBUG, INFO, WARNING, ERROR
+  file: acme.log            # Log file path (optional)
+
+# IETF Settings
+ietf:
+  working_group: acme        # Working group name
+  mailing_list: acme@ietf.org
+  draft_name: draft-ietf-acme-acme
